@@ -1,0 +1,154 @@
+{
+  "feature_names": [
+    "total_ulds",
+    "total_net_weight",
+    "avg_weight_per_uld",
+    "pct_ibx",
+    "pct_ieb",
+    "pct_ipf",
+    "pct_ixf",
+    "pct_ief",
+    "pct_md",
+    "pct_ld",
+    "pct_lw",
+    "pct_am",
+    "pct_eu",
+    "pct_meisa",
+    "pct_as",
+    "pct_dwc",
+    "pct_bom",
+    "pct_del",
+    "pct_blr",
+    "pct_no_ops",
+    "pct_demand_over",
+    "pct_space_constraint",
+    "pct_planned_rollover",
+    "day_of_week",
+    "day_of_month",
+    "week_of_year"
+  ],
+  "weight_model_metrics": {
+    "rmse": 1.3416812758973027,
+    "r2": 0.9955094549094378,
+    "cv_rmse": 18.733931560984633,
+    "cv_std": 5.394019311270564
+  },
+  "count_model_metrics": {
+    "rmse": 2.281324562565231,
+    "r2": 0.9893081773758222,
+    "cv_rmse": 20.172626877444145,
+    "cv_std": 2.5933228689767973
+  },
+  "feature_importance": [
+    {
+      "feature": "pct_demand_over",
+      "importance": 0.29646092653274536
+    },
+    {
+      "feature": "pct_space_constraint",
+      "importance": 0.2503228783607483
+    },
+    {
+      "feature": "pct_ixf",
+      "importance": 0.09721015393733978
+    },
+    {
+      "feature": "pct_eu",
+      "importance": 0.08974529802799225
+    },
+    {
+      "feature": "day_of_week",
+      "importance": 0.05651134252548218
+    },
+    {
+      "feature": "pct_del",
+      "importance": 0.04780571535229683
+    },
+    {
+      "feature": "pct_ipf",
+      "importance": 0.04402336850762367
+    },
+    {
+      "feature": "pct_ibx",
+      "importance": 0.029761414974927902
+    },
+    {
+      "feature": "avg_weight_per_uld",
+      "importance": 0.020768659189343452
+    },
+    {
+      "feature": "pct_meisa",
+      "importance": 0.01566176675260067
+    },
+    {
+      "feature": "pct_am",
+      "importance": 0.013853122480213642
+    },
+    {
+      "feature": "pct_ieb",
+      "importance": 0.00942950788885355
+    },
+    {
+      "feature": "total_ulds",
+      "importance": 0.008586416020989418
+    },
+    {
+      "feature": "total_net_weight",
+      "importance": 0.006641094107180834
+    },
+    {
+      "feature": "day_of_month",
+      "importance": 0.0049560219049453735
+    },
+    {
+      "feature": "pct_bom",
+      "importance": 0.003707436379045248
+    },
+    {
+      "feature": "pct_dwc",
+      "importance": 0.0019124617101624608
+    },
+    {
+      "feature": "pct_md",
+      "importance": 0.0018786011496558785
+    },
+    {
+      "feature": "pct_blr",
+      "importance": 0.0007638507522642612
+    },
+    {
+      "feature": "pct_ief",
+      "importance": 0.0
+    },
+    {
+      "feature": "pct_ld",
+      "importance": 0.0
+    },
+    {
+      "feature": "pct_lw",
+      "importance": 0.0
+    },
+    {
+      "feature": "pct_as",
+      "importance": 0.0
+    },
+    {
+      "feature": "pct_no_ops",
+      "importance": 0.0
+    },
+    {
+      "feature": "pct_planned_rollover",
+      "importance": 0.0
+    },
+    {
+      "feature": "week_of_year",
+      "importance": 0.0
+    }
+  ],
+  "model_info": {
+    "algorithm": "XGBoost Regression",
+    "target_weight": "weight_rollover_rate (%)",
+    "target_count": "count_rollover_rate (%)",
+    "training_samples": 26
+  }
+}
